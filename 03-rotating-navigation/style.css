@@ -110,6 +110,7 @@ nav ul li + li + li {
 
 .content img {
     min-width: 100%;
+    max-width: 100%;
 }
 
 .content {
