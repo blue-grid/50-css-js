@@ -7,3 +7,10 @@ btn.addEventListener('click', () => {
     search.classList.toggle('active')
     input.focus()
 })
+
+window.addEventListener('click', function(e) {
+    if (!btn.contains(e.target) && (!input.contains(e.target))) {
+        search.classList.remove('active')
+    }
+})
+
