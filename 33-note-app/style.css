@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #555;
+    margin: 0;
+    padding-top: 3rem;
+}
+
+@media screen and (max-width: 700px) {
+    body {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.add {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    background-color: #649c8b;
+    border: 0;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.note {
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.3);
+    margin: 30px 20px;
+    height: 400px;
+    width: 400px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.note .tools {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5rem;
+    background-color: #649c8b;
+    border-radius: 10px 10px 0 0;
+}
+
+.note .tools button {
+    background-color: transparent;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+.note textarea {
+    outline: none;
+    font-family: inherit;
+    font-size: 1.2rem;
+    border: 0;
+    height: 400px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+}
+
+.main {
+    padding: 20px;
+}
+
+.main * {
+    margin: 0;
+}
+
+.hidden {
+    display: none;
+}
